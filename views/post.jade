@@ -1,0 +1,14 @@
+html
+	head
+		title #{title}
+	body
+		a(href="home") show posts
+		span &#160;&#160;&#160;&#160;
+		a(href="logout") logout
+		h1 #{message}
+	form(name="addpost", action="/addpost", method="post")
+		input(type="text", name="title")
+		br
+		input(type="text", name="description")
+		br
+		input(type="submit", value="Blog")

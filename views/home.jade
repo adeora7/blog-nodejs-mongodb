@@ -1,0 +1,13 @@
+html
+	head
+		title #{title}
+	body
+		a(href="post") add post
+		span &#160;&#160;&#160;&#160;
+		a(href="logout") logout
+		h1 #{message}
+
+		h3 The posts
+
+		each val, key in data
+			p #{key}: <b> #{val.title} </b><br> #{val.description} <br>-by :<i> #{val.by} </i>

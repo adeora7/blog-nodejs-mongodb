@@ -1,0 +1,15 @@
+html
+	head
+		title #{title}
+	body
+		h1 Welcome to your own blog
+		a(href="register") register
+		h1 #{message}
+
+
+	form(name="login", action="/login", method="post")
+		input(type="text", name="email")
+		br
+		input(type="password", name="pass")
+		br
+		input(type="submit", value="login")

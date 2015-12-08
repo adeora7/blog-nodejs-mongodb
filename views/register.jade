@@ -1,0 +1,13 @@
+html
+	head
+		title #{title}
+	body
+		a(href="/") login
+		h1 #{message}
+
+	form(name="register", action="registeruser", method="post")
+		input(type="text", name="email")
+		br
+		input(type="password", name="pass")
+		br
+		input(type="submit", value="register")
